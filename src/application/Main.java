@@ -8,7 +8,8 @@ public class Main {
 		int[] arr = {3, 4, 2, 8 };
 		//3,2,8,4
 		//2,4,3,8
-		BubbleSort.sort(arr);
+		BubbleSort.sortAscendingOrder(arr);
+		BubbleSort.sortDescendingOrder(arr);
 		
 		
 	}
