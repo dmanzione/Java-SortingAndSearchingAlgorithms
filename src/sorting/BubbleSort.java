@@ -39,11 +39,9 @@ public class BubbleSort {
 
 	public static int[] sortDescendingOrder(int[] arr) {
 		inputArray = arr;
-		int iterations = 0;
 		for (int i = 0; i < inputArray.length; i++) {
 			boolean thereWasSwap = false;
 			for (int j = 0; j < inputArray.length - 1; j++) {
-				iterations++;
 				int elementAtIndex = inputArray[j];
 				int nextElement = inputArray[j + 1];
 
@@ -62,7 +60,7 @@ public class BubbleSort {
 		}
 
 		ArrayUtility.print(inputArray);
-		System.out.println("Iterations: " + iterations);
+		
 		return inputArray;
 
 	}

@@ -5,7 +5,6 @@ import utilities.ArrayUtility;
 public class SelectionSort {
 	
 	public static int[] sortAscendingOrder(int[] arr) {
-
 		for (int i = 0; i < arr.length - 1; i++) {
 			int smallestFromCurrentIndexOn = arr[i];
 			int indexOfSmallest = i;
@@ -19,7 +18,6 @@ public class SelectionSort {
 				arr = ArrayUtility.swap(arr, i, indexOfSmallest);
 			}
 		}
-
 		ArrayUtility.print(arr);
 		return arr;
 	}
