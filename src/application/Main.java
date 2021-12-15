@@ -5,6 +5,11 @@ import sorting.BubbleSort;
 public class Main {
 
 	public static void main(String[] args) {
-		BubbleSort.sort(new int[]{5,2,6,2,3,1,2,2});
+		int[] arr = {3, 4, 2, 8 };
+		//3,2,8,4
+		//2,4,3,8
+		BubbleSort.sort(arr);
+		
+		
 	}
 }

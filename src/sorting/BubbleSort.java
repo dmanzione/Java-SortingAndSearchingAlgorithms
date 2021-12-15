@@ -7,19 +7,28 @@ public class BubbleSort {
 
 	public static int[] sort(int[] arr) {
 		inputArray = arr;
-		//iterate array from index 0 to next to last index
-		for (int i = 0; i < inputArray.length - 1; i++) {
-			int elementAtIndex = inputArray[i];
-			int nextElement = inputArray[i+1];
-			//if element at index is greater than next element, swap
-			if (elementAtIndex > nextElement) {
 
-				swap(i, i + 1);
+		for (int i = 0; i < inputArray.length; i++) {
+			boolean sorted = true;
+
+			for (int j = 0; j < inputArray.length - 1; j++) {
+				int elementAtIndex = inputArray[j];
+				int nextElement = inputArray[j + 1];
+
+				// if element at index is greater than next element, swap
+				if (elementAtIndex > nextElement) {
+
+					swap(j, j + 1);
+					sorted = false;
+				}
+
 			}
 		}
 
 		ArrayUtility.print(inputArray);
+
 		return inputArray;
+
 	}
 
 	public static void swap(int firstIndex, int secondIndex) {
