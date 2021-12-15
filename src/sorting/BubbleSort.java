@@ -68,9 +68,7 @@ public class BubbleSort {
 	}
 
 	public static void swap(int firstIndex, int secondIndex) {
-		int temp = inputArray[firstIndex];
-		inputArray[firstIndex] = inputArray[secondIndex];
-		inputArray[secondIndex] = temp;
+		inputArray =  ArrayUtility.swap(inputArray, firstIndex, secondIndex);
 	}
 
 }
